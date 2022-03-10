@@ -1,0 +1,19 @@
+ {% extends 'header.html' %}
+ {% block title  %}
+Send Email
+ 
+ {% endblock  %}
+
+ {% block main_body%}
+<div class="container" style="background-color: grey;">
+<p style="color:black"> Send Recommendation/Feedback to Patient</p>
+
+<form action="" method="post">
+            <p style="color:white">Patient email: <input type="text" name="recipient"></p>
+                    
+         <p style="color:white">Feedback Message: <textarea name = "feedback" ></textarea></p>
+            <p><input type="submit" value="Send Message"></p>
+        </form>
+ </div>
+
+ {%endblock%}

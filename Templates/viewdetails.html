@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+ {% block title  %}
+  Activity Details
+ 
+ {% endblock  %}
+
+ {% block main_body%}
+<div class="container">
+<div class="jumbotron">
+<form action = "/search" method = "post" name="data">  
+ <label for="start">Start Date:</label>  
+ <input type="text" id="start" name="activity-start"> <br>
+ <label for="end">End Date:</label>  
+ <input type="text" id="end" name="activity-end"> <br>
+ <input type="submit" value="Search">
+
+ </div> <img src="{{ user_image }}" alt="activity graph" width="auto" height="auto"></div>
+   </form>
+ 
+
+
+
+
+
+ {%endblock%}

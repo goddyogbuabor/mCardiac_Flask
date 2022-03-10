@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 
+</head>
+    <title>
+    {% block title %}  {% endblock %}
+    </title>
+</head>
+<body>
+    <!-- black with black text -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+    <div class="navbar-nav" >
+      <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{{ url_for('uploadTrain') }}">Train Algorithm</a>
+      <a class="nav-item nav-link" href="{{ url_for('uploadClassify') }}">Classification</a>
+      <a class="nav-item nav-link" href="{{ url_for('plotView') }}">View Details</a>
+    </div>
+  </div>
+</nav>
+<center><h3>Cardiac Rehabilitation Monitoring </h3></center>
+<center>
+{% block main_body %}
+
+{% endblock%}
+  </center>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
